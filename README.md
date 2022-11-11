@@ -8,7 +8,7 @@ The whole purpose of this project was to learn how to use R to analyze data and 
 
 Linear Regression helps us find relationships between two variables. In this case, this statistical method helped me answer important questions for AutosRUs. 
 
-1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+### 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
 Acording to the results we had, there are some variables that are statistically significant and affect the MPG:
 
@@ -21,7 +21,7 @@ ground clearance: 0 > .05 statistically significant, non-random amount of varian
 
 This information tells us that with a 95% level of confidence we can say that mpg, vehicle length and ground clerance have a direct impact on mpg. 
 
-2. Is the slope of the linear model considered to be zero? Why or why not?
+### 2. Is the slope of the linear model considered to be zero? Why or why not?
 
 <img width="783" alt="Screen Shot 2022-11-10 at 18 18 34" src="https://user-images.githubusercontent.com/108498940/201233931-85ecf18f-f911-493c-b3e7-405a95f21ff2.png">
 
@@ -31,19 +31,45 @@ mpg = -.01 + 6.267(vehicle length)+.001(vehicle weight)+.069(spoiler angle)+3.54
 
 This means that the slope is not 0 because a slope exists acording to the formula. 
 
-3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+### 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 The R-squared was 0.7149 and the Adjusted R-squared was 0.6825 which indicates a high level of correlation. This means that our model predicts the mpg of MechaCar effectively but there are still other variables that affect mpg. 
 
 ## Summary Statistics on Suspension Coils
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 The variance of the total manufacturing lot is 62, which meets the design especifications of not exeeding 100. Even though the total manufacturing variance meets the requirement, lot 3 individualy has a variance of 170 which does not comply with the design requirements. 
 
-
+<img width="508" alt="Screen Shot 2022-11-10 at 18 33 40" src="https://user-images.githubusercontent.com/108498940/201234797-6f9e9522-0998-4eac-aa83-43fd6a933c3a.png">
 
 ## T-Tests on Suspension Coils
 
+### T-test for all Lots:
+
+.60 > .05, which tells us that the total manufacturing lot is not statistically significant.
+
+<img width="434" alt="Screen Shot 2022-11-10 at 18 39 23" src="https://user-images.githubusercontent.com/108498940/201236217-3de87a7e-1ee9-403f-afbe-5afd7509755b.png">
+
+### T-test for Lot 1
+
+Pp-value = 1, Alpha = .05
+1 > .05, which tells us that Lot 1 is not statistically significant.
+
+<img width="600" alt="Screen Shot 2022-11-10 at 18 39 30" src="https://user-images.githubusercontent.com/108498940/201236451-9de3bdf6-8987-4b3c-9326-c6f587da4a40.png">
+
+### T-test for Lot 2
+
+P-value = .6072, Alpha = .05
+.60 > .05, which tells us that Lot 2 is not statistically significant from the normal distribution. 
+
+<img width="580" alt="Screen Shot 2022-11-10 at 18 39 36" src="https://user-images.githubusercontent.com/108498940/201236535-3e344f26-5d08-4504-b261-28bec78bd544.png">
+
+### T-test for Lot 3
+
+P-value = .04168, alpha = .05
+.04 < .05, which tells us that it is statistically significant from the normal distribution!
+
+<img width="590" alt="Screen Shot 2022-11-10 at 18 39 42" src="https://user-images.githubusercontent.com/108498940/201236625-4782f817-5bbd-4a55-8faa-7502e110bb68.png">
 
 
