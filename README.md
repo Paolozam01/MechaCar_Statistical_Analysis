@@ -72,4 +72,18 @@ P-value = .04168, alpha = .05
 
 <img width="590" alt="Screen Shot 2022-11-10 at 18 39 42" src="https://user-images.githubusercontent.com/108498940/201236625-4782f817-5bbd-4a55-8faa-7502e110bb68.png">
 
+## Study Design: MechaCar vs Competition
 
+Some metrics that could be of interest for a consumer include cost, color, fuel efficiency, horsepower and safety. 
+
+1. What metric or metrics are you going to test?
+The next metrics to test should be the previously mentioned but more specificaly cost, fuel efficiency and safety.
+
+2. What is the null hypothesis or alternative hypothesis?
+The null hypothesis is that the mean of the model is is zero. The alternative hypothesis is that the mean of the model is not zero.
+
+3. What statistical test would you use to test the hypothesis? And why?
+Multiple linear regression, statistical and T-test should show how the variables impact the model for MechaCar and other competitors.
+
+4. What data is needed to run the statistical test?
+A random sample of n > 30 for MechaCar and their competitor, would need to be collected with all the variables information.
