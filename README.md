@@ -35,6 +35,15 @@ This means that the slope is not 0 because a slope exists acording to the formul
 
 The R-squared was 0.7149 and the Adjusted R-squared was 0.6825 which indicates a high level of correlation. This means that our model predicts the mpg of MechaCar effectively but there are still other variables that affect mpg. 
 
+## Summary Statistics on Suspension Coils
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+The variance of the total manufacturing lot is 62, which meets the design especifications of not exeeding 100. Even though the total manufacturing variance meets the requirement, lot 3 individualy has a variance of 170 which does not comply with the design requirements. 
+
+
+
+## T-Tests on Suspension Coils
 
 
 
